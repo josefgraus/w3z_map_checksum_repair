@@ -12,8 +12,27 @@ FILES
   match_compressor.py  confirm zlib settings:  python3 match_compressor.py SAVE.w3z 1,2,3
 
 USAGE
-  python3 repair.py BROKEN.w3z FRESH_SAME_MAP.w3z REPAIRED.w3z
+  You'll need your broken save and a fresh save from the same campaign map created with 
+  the newer version of the game. I'm calling the broken save "BROKEN" for the rest of the
+  instructions.
 
+  You'll also need python installed. Instructions for your platform should be easy to come by.
+  All the modules used in these scripts are included most base python installations (use pip to
+  install missing dependencies if you have to, but I doubt that will be needed).
+
+  1) Launch the updated game and start the campaign map matching your broken save.
+  2) Save the game to a new file (for example, "FRESH_SAME_MAP")
+  3) Exit the game. Locate your WC3 Forsaken Kingdom save folder (look this up, it's different
+     depending on your platform).
+  4) Pass your broken save, ("BROKEN.w3z") and the new save ("FRESH_SAME_MAP.w3z") to the script
+     via the following command,
+    
+      python3 repair.py BROKEN.w3z FRESH_SAME_MAP.w3z REPAIRED.w3z
+
+  5) REPAIRED.w3z should now exist. Make sure it's in your save folder and launch the game.
+  6) Load the save named "REPAIRED" and hopefully you'll have your progress back!
+
+NOTE:
   FRESH_SAME_MAP = a save made on the same map under the current patch.
   The output must not exist yet. A copy of BROKEN is written as REPAIRED.w3z.orig.bak.
   Keep your own backups too.

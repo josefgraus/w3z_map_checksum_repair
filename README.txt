@@ -42,7 +42,3 @@ COMPANION / AREA SAVES (Blizzard\Zones, e.g. UndeadRE01.w3z, UndeadRE01_02.w3z .
   needed, copy the repaired file in after the main save loads and before you travel.
   Companion saves have not been tested with this script. If it stops on one, the layout
   differs; inspect it with w3z.py and statstring.py.
-
-DOWNLOAD TIP
-  Give each repaired file a unique name. Delivering two files with the same name
-  caused the old copy to be downloaded instead of the new one. Check sha256sum.
